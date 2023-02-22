@@ -23,9 +23,12 @@ main {
   background-color: #eee;
 }
 
+/* 最後の要素も中央寄せしたいのでコメントアウトする */
+/*
 .step-box:last-child {
   margin-right: 0;
 }
+*/
 
 .step-img1 {
   height: 150px;
@@ -78,17 +81,14 @@ footer {
   main {
     width: 100%;
     display: block;
-    /* paddingを設定して要素を中央に寄せる */
-    padding-left: 10%;
+    
   }
 
   .step-box {
-    /* block要素として扱うため横方向のmarginはあっても適用されない */
-    /* 代わりに、縦方向のmarginを追加する */
-    /* 中央寄せのためmainのpaddingを10%で設定したので、widthを88.89(=100-10*100/90)%として左右の空白を等しくする */
-    width: 88.89%;
-    /*.縦のmarginは3%で設定 */
-    margin-bottom: 3%;
+    /* 画面幅を90%とする */
+    width: 90%;
+    /*.左右のmarginはautoとして中央寄せ, 縦のmarginは20pxで設定 */
+    margin: 20px auto;
   }
   
   /*
